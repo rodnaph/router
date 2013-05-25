@@ -51,3 +51,7 @@
   "Transformer for the action attribute"
   (partial route-attr :action))
 
+(def src
+  "Transformer for the src attribute"
+  (partial route-attr :src))
+
