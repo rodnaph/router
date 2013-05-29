@@ -1,6 +1,7 @@
 
 (ns router.core
-  (:require [clojure.string :as s]))
+  (:require [clojure.string :as s])
+  (:import (java.net URLEncoder)))
 
 (def ^{:dynamic true :private true}
   routes
@@ -12,7 +13,7 @@
 (defn- map-replace [m text]
   (reduce
     (fn [acc [k v]]
-      (s/replace acc (str k) (str v)))
+      (s/replace acc (str k) (URLEncoder/encode (str v))))
     text m))
 
 ;; Public

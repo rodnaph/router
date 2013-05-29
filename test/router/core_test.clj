@@ -13,7 +13,8 @@
 
 (deftest routes-can-be-fetch-with-vars-replaced
   (is (= "/foo/:id" (url :foo.id)))
-  (is (= "/foo/1" (url :foo.id :id 1))))
+  (is (= "/foo/1" (url :foo.id :id 1)))
+  (is (= "/foo/car+tar" (url :foo.id :id "car tar"))))
 
 (deftest nodes-can-have-attributes-set
   (is (= {:attrs {:foo "/foo/1"}}
