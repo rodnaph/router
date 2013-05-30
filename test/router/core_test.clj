@@ -20,3 +20,8 @@
   (is (= {:attrs {:foo "/foo/1"}}
          ((route-attr :foo :foo.id :id 1) {}))))
 
+(deftest unused-params-added-to-query-string
+  (is (= "/foo/1?bar=car+tar&baz=456" (url :foo.id :id 1 :bar "car tar" :baz 456))))
+
+(run-tests)
+
