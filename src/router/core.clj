@@ -3,6 +3,8 @@
   (:require [clojure.string :as s])
   (:import (java.net URLEncoder)))
 
+;*CLJSBUILD-REMOVE*;(js* "window.URLEncoder = {\"encode\": function(s) { return encodeURIComponent(s); }};")
+
 (def ^{:dynamic true :private true}
   routes
   (atom {}))
