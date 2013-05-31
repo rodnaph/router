@@ -53,3 +53,10 @@ There is also support for using your routes with Enlive, via transformers.
 These two helpers use the function _route-attr_ which you can use to
 add arbitrary attributes to nodes.
 
+## ClojureScript
+
+Router is also usable in ClojureScript, just specify it as a crossover namespace
+with cljsbuild.  You can then share your routes between the server and
+the client with exactly the same code.
+
+
