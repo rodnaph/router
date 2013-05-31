@@ -1,5 +1,5 @@
 
-# Routes Helper
+# Routes Helper [![Build Status](https://secure.travis-ci.org/rodnaph/router.png?branch=master)](http://travis-ci.org/rodnaph/router) [![Dependencies Status](http://clj-deps.herokuapp.com/github/rodnaph/router/status.png)](http://clj-deps.herokuapp.com/github/rodnaph/router)
 
 Router aims to allow you to store route definitions in one place,
 and then use these routes with application tools like Compojure, 
