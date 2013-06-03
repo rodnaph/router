@@ -7,7 +7,7 @@ and right through to your templating.
 
 ## Usage
 
-Router is available from [Clojars](https://clojars.org/router). To
+Router is available from [Clojars](https://clojars.org/rodnaph/router). To
 define some routes...
 
 ```clojure

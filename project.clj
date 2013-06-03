@@ -1,5 +1,5 @@
 
-(defproject router "0.3.0"
+(defproject rodnaph/router "0.4.0"
   :description "Routes Helper"
   :dependencies [[org.clojure/clojure "1.5.1"]]
   :plugins [[lein-cljsbuild "0.3.2"]]
